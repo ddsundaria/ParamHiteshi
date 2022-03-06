@@ -69,4 +69,14 @@ jQuery(document).ready(function($) {
         $('.mobile_menu_overlay').toggleClass('mobile_menu_active');
         $('.mobile_nav_class').toggleClass('active_mobile_nav_class');
     });
+
+    $("#edition-feb2022").on('click', function() {
+        $("#mainiframecontent").attr("src", "/Assets/2022/february/index.html");
+    });
+    $("#edition-feb2022-mobile").on('click', function() {
+        $("#mainiframecontent").attr("src", "/Assets/2022/february/index.html");
+        $('#content_nav').toggleClass('jl_mobile_nav_open');
+        $('.mobile_menu_overlay').toggleClass('mobile_menu_active');
+        $('.mobile_nav_class').toggleClass('active_mobile_nav_class');
+    });
 });
